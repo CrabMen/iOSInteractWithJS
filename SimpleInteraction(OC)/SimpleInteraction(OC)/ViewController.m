@@ -111,6 +111,7 @@
         [self showFirstAletVieController];
     };
     
+    
     //html调用OC(传参数过来)
    _context[@"test2"] = ^(){
         NSArray * args = [JSContext currentArguments];//传过来的参数
