@@ -1,0 +1,155 @@
+*, a, address, b, big, blockquote, blockquote, body, center, cite, code, dd, del, div, dl {
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: lightgrey;
+    text-align: center;
+
+}
+
+/*面板*/
+#panel{
+    background-color: white;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 60px 10px 30px;
+    /*圆角*/
+    border-radius: 10px;
+
+    /*让界面更有立体感--设置阴影*/
+    box-shadow: 0 0 4px #999;
+
+}
+
+#panel .panel-top{
+    font-size: 13px;
+    font-family: 'fantasy';
+    padding: 8px 0;
+
+    /*分割线*/
+    border-bottom: 1px solid lightgrey;
+
+    /*线长度*/
+    width: 300px;
+    /*background-color: red;*/
+    /*水平居中*/
+    margin: 0 auto;
+
+}
+
+/*面板的中间*/
+#panel .panel-content {
+    margin-top: 20px;
+}
+
+#panel .panel-content .inPut{
+    /*background-color: aqua;*/
+    margin-bottom: 10px;
+    height: 33px;
+    /*将输入框设置为父标签*/
+    position: relative;
+}
+
+#panel .panel-content label{
+    position: absolute;;
+    top: 5px;
+    left: 6px;;
+
+}
+
+#panel .panel-content .inPut input{
+    /*宽高与父标签相等*/
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    padding-left: 38px;
+    /*边距放入盒子内部*/
+    box-sizing: border-box;
+
+    /*圆角*/
+    border-radius: 6px;
+}
+
+/*获得焦点时状态*/
+#panel .panel-content .inPut input:focus{
+    outline:none;
+    border: 1px solid orange;
+    box-shadow: 0 0 4px orange;
+
+}
+
+
+/*下次自动登录&忘记密码*/
+
+#panel .setting{
+    margin-top: 20px;
+    font-size: 13px;
+}
+#panel .setting a{
+    text-decoration: none;
+    color: darkgray;
+
+
+}
+#panel .setting .auto-login{
+
+    float: left;
+}
+#panel .setting .forget-password{
+
+    float: right;
+}
+
+
+/*登录按钮*/
+#panel .login button{
+    width:100%;
+    height: 33px;
+    border: 0 ;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: orange;
+
+}
+
+/*注册*/
+#panel .register{
+    /*background-color: green;*/
+    text-align: center;
+    font-size: 13px;
+
+    /*padding-bottom: 20px;*/
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+
+}
+
+#panel .register a{
+
+    color: orange;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/*面板下部*/
+#panel .panel-footer {
+    /*background-color: red;*/
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+
+}
+#panel .panel-footer img{
+    width: 30px;
+    /*图片的垂直居中比较特殊*/
+    vertical-align: middle;
+
+}
+
+
